@@ -1,0 +1,17 @@
+.btn{
+    background-color: #2e6b4fc5;
+    color: white;
+    border-radius: 3px;
+    border:none;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    align-items: right;
+}
+.form_control{
+    color: white;
+    background-color:  #2e6b4f6e;
+    height: 70px;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+}

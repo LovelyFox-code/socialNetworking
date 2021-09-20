@@ -1,0 +1,12 @@
+.navbar {
+  background-color: #a0b3a8;
+  height: 50px;
+  width: 100%;
+}
+a {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

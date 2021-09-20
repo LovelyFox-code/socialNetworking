@@ -1,0 +1,14 @@
+.nav{
+   
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+.items, .item{
+    padding: 10px;
+    font-size: 24px;
+    list-style: none;
+}
+.right{
+    text-align: right;
+    margin-left: 30%;
+}

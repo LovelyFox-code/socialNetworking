@@ -1,0 +1,7 @@
+img{
+    width: 100%; 
+    filter: blur(2px);
+}
+.main {
+    grid-column: 2 / 5;
+}
