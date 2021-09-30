@@ -1,5 +1,5 @@
 .btn{
-    background-color: #2e6b4fc5;
+   background: linear-gradient(to right, rgb(255, 79, 99) 0%, rgb(255, 181, 138) 100%);
     color: white;
     border-radius: 3px;
     border:none;
@@ -9,7 +9,7 @@
 }
 .form_control{
     color: white;
-    background-color:  #2e6b4f6e;
+    background-color:  #03071e0e;
     height: 70px;
     border-radius: 3px;
     border: none;

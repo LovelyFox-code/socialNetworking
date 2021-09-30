@@ -1,0 +1,42 @@
+.audioPlayer {
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+  margin: 3% auto;
+  color: var(--white);
+}
+.audioPlayer h1 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  color: rgb(255, 79, 99);
+}
+h2 {
+  color: black;
+}
+.buttons {
+  margin: 3%;
+  text-align: center;
+}
+p {
+  margin-top: 15px;
+}
+
+input {
+  display: none;
+}
+.fileUpload {
+  background-color: rgb(255, 181, 138);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: auto;
+  color: #fdfffc;
+}
+.file-upload p {
+  margin-top: 15px;
+}

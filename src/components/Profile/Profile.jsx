@@ -1,22 +1,19 @@
 import React from 'react';
 import style from './Profile.module.css'
-import Posts from './Post/Posts';
-import bg from '../../img/bg.png'
-import WallPosts from './WallPosts/WallPosts';
+import Posts from './Posts/Posts';
+import Bio from './Bio/Bio';
 
 
 
-function Profile() {
+function Profile(props) {
+
+ 
   return (
 
     <div className={style.main}>
-      <div >
-      <img src={bg} alt="background" />
-      </div>
+      < Bio />
       < Posts />
-      < WallPosts />
     </div>
-
   );
 }
 

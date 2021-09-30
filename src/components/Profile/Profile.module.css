@@ -1,7 +1,12 @@
-img{
+
+.main img{
     width: 100%; 
     filter: blur(2px);
 }
 .main {
-    grid-column: 2 / 5;
+    width: 80%;
+    font-family: 'DM Sans', sans-serif;
+}
+.main h1{
+    font-family: 'Poppins', sans-serif;
 }
