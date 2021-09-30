@@ -9,7 +9,7 @@ function Post(props) {
   return (
       <div className={style.item}>
           <img src={avatar} alt="avatar" />
-          <p>{props.message}</p>
+          {props.message}
           <div><span onClick={() => setCount(count + 1)}>< FcLikePlaceholder /></span> {count}</div>
       </div>
   );
