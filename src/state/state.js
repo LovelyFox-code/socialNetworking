@@ -1,13 +1,15 @@
+import { rerenderEntireTree } from "../render";
+
 const state = {
   profilePage: {
     postData: [
-      { message: "Hello" },
-      { message: "Hello" },
-      { message: "It's my first post" },
-      { message: "Hello" },
-      { message: "Hello" },
-      { message: "Hello" },
-      { message: "Hello" },
+      { id: 1, message: "Hello" },
+      { id: 2, message: "Hello" },
+      { id: 3, message: "It's my first post" },
+      { id: 4, message: "Hello" },
+      { id: 5, message: "Hello" },
+      { id: 6, message: "Hello" },
+      { id: 7, message: "Hello" },
     ],
   },
   dialogPage: {
@@ -56,4 +58,14 @@ const state = {
     ],
   },
 };
+export const addPost = (postMessage) => {
+    let newPost = {
+        id: 8,
+        message: postMessage
+    }
+    state.profilePage.postData.push(newPost);
+    rerenderEntireTree(state);
+   
+}
+
 export default state;

@@ -1,15 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import state from './components/state/state';
-
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App state = {state}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-reportWebVitals();
+import state from './state/state';
+import {rerenderEntireTree} from './render';
+ 
+rerenderEntireTree(state);

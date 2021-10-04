@@ -4,11 +4,12 @@ import Posts from './Posts/Posts';
 import Bio from './Bio/Bio';
 
 function Profile(props) {
-
+ 
   return (
     <div className={style.main}>
       < Bio />
-      < Posts postData={props.state.postData}/>
+      < Posts postData={props.state.postData}
+      addPost={props.addPost}/>
     </div>
   );
 }
