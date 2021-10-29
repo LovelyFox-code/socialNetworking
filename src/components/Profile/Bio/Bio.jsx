@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Bio.module.css'
-import bg from '../../../img/bg.png'
+import bg from '../../../img/flower.png'
 function Bio() {
   return (
 

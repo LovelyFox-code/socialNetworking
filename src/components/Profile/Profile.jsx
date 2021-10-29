@@ -8,8 +8,9 @@ function Profile(props) {
   return (
     <div className={style.main}>
       < Bio />
-      < Posts postData={props.state.postData}
-      addPost={props.addPost}/>
+      < Posts postData={props.profilePage.postData}
+      newPostText ={props.profilePage.newPostText}
+      dispatch={props.dispatch}/>
     </div>
   );
 }

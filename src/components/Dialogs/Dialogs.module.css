@@ -1,10 +1,15 @@
 .dialogs {
   display: flex;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   margin-top: 3%;
   border-radius: 20px;
   padding: 24px;
   border: 1px solid rgba(0, 0, 0, 0.322);
+}
+.main {
+  width: 80%;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .dialogsItem {
@@ -16,17 +21,7 @@
   margin-left: 5%;
   justify-content: space-between;
 }
-.dialogsItem:after {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.322);
-    position: absolute;
-    width: 1px;
-    height: 20%;
-    top: 10%;
-    left: 30%;
-    display: block;
-  }
-  
+
 .dialogsItem a {
   text-decoration: none;
   color: black;

@@ -3,20 +3,25 @@ import style from './Posts.module.css'
 import Post from './Post/Post';
 
 function Posts(props) {
+   
     const post = props.postData.map(el => < Post message={el.message} />);
 
     const newPostELement = React.createRef();
 
     const addPost = () => {
+        props.dispatch({type: 'ADD-POST'});
+    }
+    const onPostChange = () =>{
         let text = newPostELement.current.value;
-        props.addPost(text);
-        newPostELement.current.value ='';
+        props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text})
+        // props.updateNewPostText(text);
+        // props.newPostELement.current.value ='';
     }
     return (
         <div>
             <h1>My posts</h1>
             <div >
-                <textarea ref={newPostELement} type="text" className={style.form_control} />
+                <textarea onChange={onPostChange} ref={newPostELement} className={style.form_control} value={props.newPostText}/>
                 <button onClick={ addPost } className={style.btn} type="submit">Add post</button>
             </div>
             {post}
