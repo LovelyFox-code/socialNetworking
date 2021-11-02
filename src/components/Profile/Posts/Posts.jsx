@@ -1,19 +1,20 @@
 import React from 'react';
 import style from './Posts.module.css'
 import Post from './Post/Post';
+import {addPostActionCreator,updateNewPostActionCreator } from '../../../state/state'
 
-function Posts(props) {
+const Posts=(props) =>{
    
     const post = props.postData.map(el => < Post message={el.message} />);
 
     const newPostELement = React.createRef();
 
     const addPost = () => {
-        props.dispatch({type: 'ADD-POST'});
+        props.dispatch(addPostActionCreator());
     }
     const onPostChange = () =>{
         let text = newPostELement.current.value;
-        props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text})
+        props.dispatch(updateNewPostActionCreator(text))
         // props.updateNewPostText(text);
         // props.newPostELement.current.value ='';
     }
