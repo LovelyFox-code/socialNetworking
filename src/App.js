@@ -28,10 +28,8 @@ function App(props) {
         />
         <Route
           path="/dialogs"
-          render={() => <Dialogs 
-            state={props.state.dialogPage} 
-            addMessage={props.addMessage}
-            updateNewText={props.updateNewText}/>}
+          render={() => <Dialogs store ={props.store}
+           />}
         />
         <Route path="/news" render={() => <News />} />
         <Route path="/music" render={() => <Music />} />
